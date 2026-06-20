@@ -1,0 +1,40 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-visual { width: 44%; height: 100%; }
+  .mode-portrait .sl-visual { width: 100%; height: 42%; }
+  .mode-landscape .sl-content { flex: 1; }
+  .mode-portrait .sl-content { flex: 1; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout w-full h-full flex gap-0">
+
+    <!-- Left: content -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-8">
+          Solo · Browser Game · 3D
+        </span>
+        <h1 class="text-6xl font-black text-slate-900 leading-none tracking-tight mb-5">
+          Tic-Tac-Toe,<br>
+          <span class="text-indigo-600">Elevated.</span>
+        </h1>
+        <p class="text-lg text-slate-500 font-light leading-relaxed max-w-xs">
+          Classic rules. Three dimensions.<br>One AI opponent worth beating.
+        </p>
+      </div>
+      <data-attribution />
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-visual flex-shrink-0 overflow-hidden">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=elegant+3D+tic-tac-toe+grid+glowing+indigo+lines+floating+in+dark+space+premium+digital+art+minimal+clean"
+        class="w-full h-full object-cover"
+        alt="3D Tic-Tac-Toe board"
+      />
+    </div>
+
+  </div>
+</section>
