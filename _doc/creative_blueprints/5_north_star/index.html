@@ -1,0 +1,76 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 52%; }
+  .mode-portrait .sl-left { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout w-full h-full flex gap-6 p-10">
+
+    <!-- Left: WVO definition + formula -->
+    <div class="sl-left flex flex-col justify-center gap-6">
+
+      <div>
+        <span class="text-xs font-bold tracking-widest uppercase text-indigo-600 block mb-2">North Star Metric</span>
+        <h2 class="text-3xl font-black text-slate-900 leading-tight">
+          Games Completed<br>Per Week
+        </h2>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed max-w-sm">
+          The single number that tells you the app is delivering value: a full game played — win, loss, or draw — against the AI.
+        </p>
+      </div>
+
+      <!-- Formula -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+        <span class="text-xs font-bold tracking-widest uppercase text-slate-400 block mb-3">Weekly Verified Operations — Formula</span>
+
+        <div class="flex flex-col gap-2 text-sm text-slate-700 font-mono">
+          <div class="flex items-center gap-2">
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2 py-0.5 rounded-full">Assumption — adjust this</span>
+            <span>5 games / day</span>
+          </div>
+          <div class="flex items-center gap-2 pl-2 text-slate-400 text-xs">× 7 days / week</div>
+          <div class="flex items-center gap-2 border-t border-slate-200 pt-2 mt-1">
+            <span class="text-indigo-600 font-black text-xl">=&nbsp;35</span>
+            <span class="text-slate-600 text-sm font-semibold">completed games / week</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Value derivation -->
+      <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-5">
+        <span class="text-xs font-bold tracking-widest uppercase text-indigo-600 block mb-3">Value Per Operation</span>
+        <div class="flex flex-col gap-1 text-sm text-slate-700 font-mono">
+          <div class="flex items-center gap-2">
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2 py-0.5 rounded-full">Assumption</span>
+            <span>~2 min active play / game</span>
+          </div>
+          <div class="text-slate-400 text-xs pl-2">35 games × 2 min = <span class="font-bold text-slate-700">70 min focused play / week</span></div>
+          <div class="text-slate-400 text-xs pl-2">≈ <span class="font-bold text-slate-700">60 hrs / year</span> of genuine entertainment</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: prominent figure + framing -->
+    <div class="flex-1 flex flex-col justify-center gap-5">
+
+      <div class="bg-slate-900 rounded-2xl p-8 text-center flex flex-col items-center gap-3 flex-1 justify-center">
+        <span class="text-xs font-bold tracking-widest uppercase text-slate-400">Weekly Target</span>
+        <span class="text-7xl font-black text-white">35</span>
+        <span class="text-indigo-400 font-semibold text-sm">completed games / week</span>
+        <div class="w-12 h-px bg-slate-700 my-1"></div>
+        <span class="text-slate-400 text-xs">~70 min active play · 60 hrs / year</span>
+      </div>
+
+      <div class="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+        <p class="text-amber-800 text-xs leading-relaxed">
+          <span class="font-bold">Projected impact — based on your inputs.</span> Adjust the assumption chips above to match your actual play frequency. Numbers update accordingly.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
