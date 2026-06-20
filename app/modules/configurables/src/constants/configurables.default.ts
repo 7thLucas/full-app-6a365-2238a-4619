@@ -64,67 +64,72 @@ export type TDefaultConfigurableData = {
   logoUrl: string;
   brandColor: TBrandColor;
   font: TFont;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  gameTitle: string;
+  gameTagline?: string;
+  playerXColor?: string;
+  playerOColor?: string;
+  aiDifficulty?: "easy" | "medium" | "hard";
+  showScoreboard?: boolean;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "My App",
+  appName: "TacTox",
   logoUrl: "",
   brandColor: {
     // Base
-    background:        "#ffffff",
-    foreground:        "#09090b",
+    background:        "#0f1117",
+    foreground:        "#e2e8f0",
     // Card
-    card:              "#ffffff",
-    cardForeground:    "#09090b",
+    card:              "#1e2130",
+    cardForeground:    "#e2e8f0",
     // Popover
-    popover:           "#ffffff",
-    popoverForeground: "#09090b",
+    popover:           "#1e2130",
+    popoverForeground: "#e2e8f0",
     // Primary
-    primary:           "#2563eb",
+    primary:           "#6366f1",
     primaryForeground: "#ffffff",
     // Secondary
-    secondary:           "#f4f4f5",
-    secondaryForeground: "#18181b",
+    secondary:           "#06b6d4",
+    secondaryForeground: "#ffffff",
     // Muted
-    muted:           "#f4f4f5",
-    mutedForeground: "#71717a",
+    muted:           "#2d3148",
+    mutedForeground: "#94a3b8",
     // Accent
-    accent:           "#f4f4f5",
-    accentForeground: "#18181b",
+    accent:           "#818cf8",
+    accentForeground: "#ffffff",
     // Destructive
-    destructive:           "#ef4444",
-    destructiveForeground: "#fafafa",
+    destructive:           "#fb7185",
+    destructiveForeground: "#ffffff",
     // Border / Input / Ring
-    border: "#e4e4e7",
-    input:  "#e4e4e7",
-    ring:   "#2563eb",
+    border: "#2d3148",
+    input:  "#2d3148",
+    ring:   "#6366f1",
     // Charts
-    chart1: "#f97316",
-    chart2: "#0d9488",
-    chart3: "#1e3a5f",
-    chart4: "#d4a017",
-    chart5: "#ea580c",
+    chart1: "#6366f1",
+    chart2: "#06b6d4",
+    chart3: "#fb7185",
+    chart4: "#818cf8",
+    chart5: "#f59e0b",
     // Navbar
-    navbarBackground: "#ffffff",
+    navbarBackground: "#0f1117",
     // Sidebar
-    sidebarBackground:        "#fafafa",
-    sidebarForeground:        "#3f3f46",
-    sidebarPrimary:           "#2563eb",
+    sidebarBackground:        "#1e2130",
+    sidebarForeground:        "#e2e8f0",
+    sidebarPrimary:           "#6366f1",
     sidebarPrimaryForeground: "#ffffff",
-    sidebarAccent:            "#f4f4f5",
-    sidebarAccentForeground:  "#18181b",
-    sidebarBorder:            "#e4e4e7",
-    sidebarRing:              "#2563eb",
+    sidebarAccent:            "#2d3148",
+    sidebarAccentForeground:  "#e2e8f0",
+    sidebarBorder:            "#2d3148",
+    sidebarRing:              "#6366f1",
   },
   font: {
-    headingFont: "Plus Jakarta Sans",
-    textFont: "Inter",
+    headingFont: "Space Grotesk",
+    textFont: "DM Sans",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // ─────────────────────────────────────────────────────────────────────
+  gameTitle: "TacTox",
+  gameTagline: "3D Tic-Tac-Toe — Outsmart the AI in three dimensions",
+  playerXColor: "#818cf8",
+  playerOColor: "#fb7185",
+  aiDifficulty: "medium",
+  showScoreboard: true,
 };

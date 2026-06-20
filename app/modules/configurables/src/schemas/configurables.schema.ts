@@ -100,6 +100,46 @@ export const configurableSchemas: ConfigurableSchemas = {
     },
 
     {
+      fieldName: "gameTitle",
+      type: "string",
+      required: true,
+      label: "Game Title",
+      minLength: 1,
+      maxLength: 60,
+    },
+    {
+      fieldName: "gameTagline",
+      type: "string",
+      required: false,
+      label: "Game Tagline",
+      maxLength: 120,
+    },
+    {
+      fieldName: "playerXColor",
+      type: "color",
+      required: false,
+      label: "Player X Color",
+    },
+    {
+      fieldName: "playerOColor",
+      type: "color",
+      required: false,
+      label: "AI / Player O Color",
+    },
+    {
+      fieldName: "aiDifficulty",
+      type: "enum",
+      required: false,
+      label: "AI Difficulty",
+      options: ["easy", "medium", "hard"],
+    },
+    {
+      fieldName: "showScoreboard",
+      type: "boolean",
+      required: false,
+      label: "Show Scoreboard",
+    },
+    {
       fieldName: "font",
       type: "object",
       required: true,
